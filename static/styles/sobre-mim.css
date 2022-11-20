@@ -13,11 +13,12 @@
     top: 0px;
     width: 100%;
     height: 96px;
-    background: #99B2B7;
-    color: #48676D;
+    background: #BFD5D9;
+    color: #7A6A53;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 25px;
 }
 
 .rodape{
@@ -26,19 +27,21 @@
     left: 0px;
     width: 100%;
     height: 77px;
-    background: #99B2B7;
-    color: #48676D;
+    background: #BFD5D9;
+    color: #7A6A53;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-size: 25px;
 }
 
 .corpo{
     display: flex;
-    background: #D5DED9;
-    color: #48676D;
+    background: #DED5D5;
+    color: black;
     height: 600px;
+    font-size: 18px;
 }
 
 .txtCorpo{
@@ -61,6 +64,7 @@
     text-align: center;
     justify-content: center;
     vertical-align: center;
+    filter: opacity(0.4) drop-shadow(0 0 0 #7A6A53);
 }
 
 a{

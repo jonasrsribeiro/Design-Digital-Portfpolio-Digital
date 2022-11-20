@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonas Ribeiro</title>
-    <link rel="stylesheet" href="formacao.css">
-</head>
-<body>
+{% extends "base-home.html" %}
 
-    <header class="cabecalho">
-        <a href="home.html">Jonas Ribeiro</a>
-        <nav>
-            <a href="sobre-mim.html">Sobre mim</a> |
-            <a href="formacao.html">Formação</a> |
-            <a href="projetos.html">Projetos</a>
-        </nav>
-    </header>
+{% block head %}
+    <link rel="stylesheet" href="..\static\styles\formacao.css">
+{% endblock %}
 
+{% block contents %}
     <div class="corpo">
-        <img src="img\fotoFormacao.svg" alt="" class="imgRosto">
+        <img src="..\static\img\fotoFormacao.svg" alt="" class="imgRosto">
         <div class="txtCorpo">
             <h2>Minha formação</h2><br>
             <p>Estudei minha infância toda em um mesmo colégio, o SESI São José dos Campos. Dos 4 aos 18 anos, passei minha vida com os mesmos professores e os mesmos amigos. Não tenho muito do que reclamar de lá, na verdade sinto um pouco de saudades, mas só as vezes!</p><br>
@@ -31,12 +18,4 @@
             <p>Tentei estudar sozinho e pensei que seria mais difícil do que eu imaginei. Então abandonei a ideia para aprender de fato a programar. Hoje estou aqui, em busca desse novo objetivo!</p>
         </div>
     </div>
-
-    <footer class="rodape">
-        Jonas Rafael Siqueira Ribeiro | ©2022 Todos os direitos reservados.
-        <a href="https://www.github.com/jonasrsribeiro"><img src="img\logoGitHub.svg" alt="" class="imgRodape">GitHub</a>
-        <a href="https://www.linkedin.com/in/jonasrsribeiro"><img src="img\logoLinkedin.svg" alt="" class="imgRodape">Linkedin</a>
-    </footer>
-
-</body>
-</html>
+{% endblock %}

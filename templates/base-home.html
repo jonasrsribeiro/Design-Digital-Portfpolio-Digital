@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas Ribeiro</title>
+    
+    {% endblock %}
+</head>
+
+<body class="corpoGeral">
+    <!-- cabeçalho -->
+    {% block header %}
+    <header class="cabecalho">
+        <a href="{{ url_for('home') }}">Jonas Ribeiro</a>
+        <nav>
+            <a href="{{ url_for('sobreMim') }}">Sobre mim</a> |
+            <a href="{{ url_for('formacao') }}">Formação</a> |
+            <a href="{{ url_for('projetos') }}">Projetos</a>
+        </nav>
+    </header>
+    {% endblock %}
+
+    <!-- conteúdo da página -->
+    <main>
+        {% block contents %}{% endblock %}
+    </main>
+
+    <!-- rodapé -->
+    {% block footer %}
+    <footer class="rodape">
+        Jonas Rafael Siqueira Ribeiro | ©2022 Todos os direitos reservados.
+        <div class="letraRodape">
+            <a href="https://www.github.com/jonasrsribeiro"><img src="..\static\img\logoGitHub.svg" alt="" class="imgRodape"> GitHub</a>
+            <a href="https://www.linkedin.com/in/jonasrsribeiro"><img src="..\static\img\logoLinkedin.svg" alt="" class="imgRodape"> Linkedin</a>
+        </div>
+    </footer>
+    {% endblock %}
+
+</body>
+</html>
