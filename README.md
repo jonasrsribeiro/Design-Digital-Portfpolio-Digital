@@ -22,4 +22,6 @@ Esse projeto foi feito para a disciplina Design Digital, visando a construção 
  flask --app app run
 
 > O site abrirá no link: http://localhost:5000/
+
+> Ou abra a aplicação pelo deploy no Heroku: https://designdigital.herokuapp.com/
 ```
