@@ -1,16 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    text-align: center;
-    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
 
+@media screen and (min-width: 450px) {
+    .rodape {
+        flex-direction: column;
+    }
+  }
+
+.corpoGeral {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .cabecalho{
-    position: relative;
-    left: 0px;
-    top: 0px;
     width: 100%;
     height: 96px;
     background: #BFD5D9;
@@ -22,14 +32,12 @@
 }
 
 .rodape{
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 77px;
     background: #BFD5D9;
     color: #7A6A53;
+
     display: flex;
+    gap: 10px;
+
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -38,14 +46,20 @@
 
 .corpo{
     display: flex;
+    flex-direction: column;
+
     background: #DED5D5;
     color: black;
-    height: 600px;
+
     font-size: 18px;
+    align-items: center;
+    padding: 5% 10% 5% 10%;
 }
 
 .txtCorpo{
     margin-top: 20px;
+    text-align: justify;
+    padding: 0% 10%;
 }
 
 .imgRosto{
@@ -56,18 +70,27 @@
 }
 
 .imgRodape{
-    height: 52.152095794677734px;
-    width: 53.47200012207031px;
+    height: 32px;
+    width: 33px;
     border-radius: 0px;
-    color: #48676D;
+    filter: opacity(0.4) drop-shadow(0 0 0 #7A6A53);
+    display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    vertical-align: center;
-    filter: opacity(0.4) drop-shadow(0 0 0 #7A6A53);
 }
 
-a{
+.letraRodape {
     text-decoration: none;
     color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+}
+
+.logoSite{
+    height: 20%;
+    width: 20%;
 }
